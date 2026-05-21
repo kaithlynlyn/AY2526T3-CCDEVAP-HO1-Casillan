@@ -3,6 +3,10 @@
 
 	<head>
 		<title>About Me Page</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 	</head>
 <body>
 
@@ -12,60 +16,74 @@
 
 <hr>
 	
-<nav>
+<nav class="navigationbar">
 <a href="index.html"> Professional Portfolio </a>
-|
-<a href="#Movies/Shows"> Movies/Shows </a>
-|
+<a href="#movies/shows"> Movies/Shows </a>
 <a href="#music"> Music </a>
-|
 <a href="#hobbies"> Hobbies </a>
 </nav>
-<hr>
+
+
 	
 <main>
-<section>
+<section class="portfolio">
 
-<pre>
-Nickname: Kaithlyn
-Personality: ESFP-T
-Zodiac Sign: Cancer
-</pre>
+<p>Nickname: Kaithlyn</p>
+<p>Personality: ESFP-T</p>
+<p>Zodiac Sign: Cancer</p>
+
 </section>
 
 <hr>
 
-<section id="movies/shows">
-<h3>TOP 3 Movies/Tv Shows:</h3>
-<img src="movie1.jpg" width="150" alt="10 things I hate about you">
-<img src="movie.jpg" width="150" alt="One Day">
-<img src="movie3.jpeg" width="150" alt="Ready or Not">
+<section id="movies/shows" class="portfolio">
+<h2>Movies/Shows</h2>
 
-<br>
-<br>
-	
+<div class="movie_split">
+<div class="movie_text">
+<h3>TOP 3 Movies/Tv Shows:</h3>
+</div>
+<div class="movies_img">
+<img src="movie1.jpg" width="150" >
+<img src="movie.jpg" width="150" >
+<img src="movie3.jpeg" width="150" >
+</div>
+</div>
+
+<br><br>
+
+<div class="bucket_split">
+<div class="bucket_text">
 <h3>Movie/TV Show bucket list:</h3>
+</div>
+<div class="bucket_list">
 <ul>
 	<li> Colony </li>
 	<li> I love you with all my hypothalamus </li>
 	<li> Perfect Crown </li>
 	<li> Begin Again </li>
 </ul>
+</div>
+</div>
 </section>
 
 <hr>
 
-<section id="music">
+<section id="music" class="portfolio">
+<h2>Music</h2>
 <h3> CURRENT ON REPEAT SONG </h3>
+
+<div class="audio">
 <audio controls src="Audio.mp3"> </audio>
 <br>
-<a href="https://open.spotify.com/track/312z6PZ8wwREck8613PkJk?si=b6d44d51f3da4875"> Link to Spotify </a>
+<a href="https://open.spotify.com/track/312z6PZ8wwREck8613PkJk?si=b6d44d51f3da4875" class="spotify_button"> Link to Spotify </a>
+</div>
 
 <br>
 <br>
 
 <h3>Current TOP 3 Albums</h3>
-<table>
+<table class="music_table">
 	<tr>
 		<th>Album Cover</th>
 		<th>Album Title</th>
@@ -94,23 +112,43 @@ Zodiac Sign: Cancer
 
 <hr>
 
-<section id="hobbies">
+<section id="hobbies" class="portfolio">
+<h2>Hobbies</h2>
+
+<div class="boulderings">
 <h3> Current Favorite Sport: Bouldering </h3>
-<img src="bouldering1.PNG" width="200"> 
-<img src="bouldering2.PNG" width="200"> 
+
 <video controls width="200">
 	<source
 	src="Bouldering.mp4"
 	type="video/mp4"> </video>
-</section>
 
-<hr>
+<img src="bouldering1.PNG" width="200"> 
+<img src="bouldering2.PNG" width="200"> 
 
-<section>
+</div>
+
+
+<section class="portfolio">
 <h3> Other Hobbies:</h3>
+<div class="hobbies">
+
+<div class="hobby">
 <img src="Baking.jpg" width="200" alt="Baking"> 
+<span>Baking</span>
+</div>
+
+<div class="hobby">
 <img src="Billiards.jpg" width="200" alt="Billiards"> 
+<span>Billiards</span>
+</div>
+
+<div class="hobby">
 <img src="Hiking.jpg" width="200" alt="Hiking"> 
+<span>Hiking</span>
+</div>
+
+</div>
 </section>
 
 </main>
@@ -121,4 +159,3 @@ Zodiac Sign: Cancer
 
 </body>
 </html>
-
