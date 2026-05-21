@@ -2,6 +2,10 @@
 <html>
 	<head>
 		<title>Professional Navigation</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 	</head>
 <body>
 
@@ -9,25 +13,38 @@
 
 <hr>
 	
-	<nav>
+	<nav class="navigationbar">
 	<a href="me.html"> About Me </a>
-	|
-	<a href="#visitor_form">Visitor Form </a>
-	<hr>
+	<a href="#educ"> Education </a>
+	<a href="#extra">Extracurriculars </a>
+	<a href="#skills"> Skillset </a>
+	<a href="#contact"> Connect with Me </a>
+	<a href="#visitor_form"> Visitor Form </a>
+	</nav>
+
 	
 <main>
-<section>
-<h2>Kaithlyn Isabelle M. Casillan</h2>
-<h4>About Me</h4>
+<section class="portfolio">
+<h2>About Me</h2> 
+<div class="about">
+<div class="about_me_img">
+<img src="About_me.jpg">
+</div>
+
+<div class="about_text">
+<h4>Kaithlyn Isabelle M. Casillan</h4>
 <p>
 I am a dedicated IT student at De La Salle University specializing in network administration and cybersecurity. With hands-on experience in configuring complex network infrastructures and a passion for data security. My academic and project background has equipped me with a strong foundation in designing resilient systems and leveraging technology to create impactful digital solutions.
 </p>
+</div>
+
+</div>
 </section>
 
 <hr>
 
-<section>
-<h3>Education</h3>
+<section id="educ" class="portfolio">
+<h2>Education</h2>
 <ul>
 	<li>De La Salle University</li>
 	<li>Bachelor of Science in Information Technology</li>
@@ -38,8 +55,8 @@ I am a dedicated IT student at De La Salle University specializing in network ad
 
 <hr>
 
-<section> 
-<h3>Extracurriculars:</h3>
+<section id="extra" class="portfolio"> 
+<h2>Extracurriculars:</h2>
 <ul>
 	<li>2025 – 2026: Socio-Civic AVP</li>
 	<li>2025 – 2026: Team Lead for Finance Hackercup Competition</li>
@@ -56,9 +73,9 @@ I am a dedicated IT student at De La Salle University specializing in network ad
 
 <hr>
 
-<section>
-<h3>Skillset</h3>
-<table id = "table">
+<section id="skills" class="portfolio">
+<h2>Skillset</h2>
+<table id = "table" class="professional_table">
 	<tr>
 		<th> Category </th>
 		<th> Tool </th>
@@ -90,8 +107,8 @@ I am a dedicated IT student at De La Salle University specializing in network ad
 
 <hr>
 
-<section>
-<p> Connect with me: </p>
+<section id="contact" class="portfolio">
+<h2> Connect with me: </h2>
 	<ul>
 		<li>Facebook: <a href="https://www.facebook.com/kaithlyn.isabelle.casillan/">Kaithlyn Isabelle M. Casillan</a> </li>
 		<li>Email: <a href="mailto:kaithlyn_isabelle_m_casillan@dlsu.edu.ph"> kaithlyn_isabelle_m_casillan@dlsu.edu.ph </a> </li>
@@ -102,17 +119,17 @@ I am a dedicated IT student at De La Salle University specializing in network ad
 
 <hr>
 
-<section id="visitor_form">
+<section id="visitor_form" class="portfolio">
 	<h3>Visitor Form</h3>
 
-	<form>
+	<form class="visitors">
 		<input type="text" placeholder="Name">
 		<input type="email" placeholder="Email">
-		<br>
-		<br>
+	
+		
 		<p>Feedback:</p>
 		<textarea placeholder="Write message here..."></textarea>
-		<br>
+		
 		<button type="submit"> Submit </button>
 	</form>
 </section>
